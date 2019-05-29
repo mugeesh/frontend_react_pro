@@ -2,10 +2,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can build docker:
 
-### `npm start`
+### `sudo docker build -t mugeesh/reactjs -f Dockerfile.dev .`
 
+run the docker 
+### `docker run -p 3000:3000 mugeesh/reactjs `
+ 
+ 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
