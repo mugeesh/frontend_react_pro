@@ -9,4 +9,12 @@ services:
     volumes:
       - /app/node_modules
       - .:/app  # from development real time update for developement purpose 
-    
+  
+  tests:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev 
+    volumes:
+      - /app/node_modules
+      - .:/app  # from development real time update for developement purpose 
+    command: ["npm","run","test"]
