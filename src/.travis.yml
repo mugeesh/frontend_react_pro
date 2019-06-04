@@ -1,9 +1,8 @@
 language: generic  
 
-sudo: required
-
 services:
   - docker
+sudo: required
 
 before_install:
   - docker build -t mugeesh/frontend_react_pro -f Dockerfile.dev .
