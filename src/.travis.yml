@@ -2,9 +2,10 @@ sudo: required
 services:
   - docker 
 
-
 before_install:
   - docker build -t mugeesh/frontend_react_pro -f Dockerfile.dev .
 
 script:
-  - docker run mugeesh/frontend_react_pro npm run test
+  - docker run mugeesh/frontend_react_pro npm run test -- --coverage
+
+
