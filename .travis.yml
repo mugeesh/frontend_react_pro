@@ -18,7 +18,7 @@ deploy:
   app: "fronted_web_react_docker"
   env: "FrontedWebReactDocker-env"
   bucket_name: "elasticbeanstalk-ap-southeast-1-284249289744"
-  bucket_name: "fronted_web_react_docker"
+  bucket_path: "fronted_web_react_docker"
   on: 
     branch: master
   access_key_id: $AWS_ACCESS_KEY
