@@ -10,11 +10,15 @@ services:
       - /app/node_modules
       - .:/app  # from development real time update for developement purpose 
   
-  tests:
-    build: 
-      context: .
-      dockerfile: Dockerfile.dev 
-    volumes:
-      - /app/node_modules
-      - .:/app  # from development real time update for developement purpose 
-    command: ["npm","run","test"]
+  # tests:
+  #   build: 
+  #     context: .
+  #     dockerfile: Dockerfile.dev 
+  #   volumes:
+  #     - /app/node_modules
+  #     - .:/app  # from development real time update for developement purpose 
+  #   command: ["npm","run","test"]
+
+
+#$docker build -t mugeesh/frontend_react_pro -f Dockerfile.dev .
+#$ docker run mugeesh/frontend_react_pro npm run test -- --coverage
